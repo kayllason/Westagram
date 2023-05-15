@@ -1,0 +1,304 @@
+* {
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    outline: none;
+}
+
+@media screen and (max-width: 840px) {
+    .main-right {
+        display: none;
+    }
+}
+
+body {
+    margin: 0; 
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 10px;
+    background-color: #fafafa;
+    border-top: 1px solid #e6e6e6;
+}
+
+article {
+    width: 470px;
+    background-color: white;
+    border: 1px solid #e6e6e6;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-weight: 560;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px;
+}
+
+footer {
+    width: 210px;
+    padding: 0 5px;
+}
+
+.navBarLogo {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+}
+
+nav .logo {
+    font-size: 20px;
+    margin: 0 10px;
+    padding: 1px 10px;
+    border-left: 1px solid black;
+    font-family: 'Lobster', sans-serif;
+}
+
+nav .iconsOnRight {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+}
+
+.iconsOnRight .icon {
+    margin: 0 10px;
+}
+
+.uploadedImg {
+    width: 468px;
+}
+
+article .pfp {
+    width: 32px;
+    margin-left: 8px;
+    border-radius: 50%;
+}
+
+.light {
+    color: #969696;
+    font-weight: 300;
+}
+
+.lighter {
+    color: #cfcfcf;
+    font-weight: 300;
+    font-size: 11px;
+}
+
+.searchBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchInput {
+    width: 160px;
+    height: 22px;
+    background-color: #fafafa;
+    border: 1px solid #e6e6e6;
+}
+
+.magnifyingGlass {
+    width: 8px;
+    margin: 2px;
+    transform: translate(-102px, 0.5px);
+}
+
+.searchInput::placeholder {
+    font-size: 10px;
+    text-align: center;
+}
+
+.feed {
+    margin: 0 20px 0 50px;
+}
+
+.main-right {
+    width: 250px;
+    margin: 0 50px 0 20px;
+}
+
+article header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8px 4px 8px 5px;
+}
+
+.pfp {
+    width: 30px;
+    margin-right: 0px;
+    border-radius: 50%;
+}
+
+header .userInfo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+header .userInfo .username {
+    margin: 0 0 0 12px;
+}
+
+.caption {
+    margin: 2px 12px;
+}
+
+.interactionBar {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5px 0 10px;
+}
+
+.likedListContainer {
+    display: flex;
+    align-items: center;
+    height: 20px;
+    margin: 0 0 6px 12px;
+}
+
+.pfpSmall {
+    width: 15px;
+    margin-right: 4px;
+    border-radius: 50%;
+}
+
+.commentSection {
+    display: flex;
+    flex-direction: column;
+}
+
+.commentsList {
+    padding: 0;
+    margin: 1px 0 1px 12px;
+}
+
+.comment {
+    width: 400px;
+    margin: 3px 0;
+    word-wrap: break-word;
+    float: left;
+}
+
+.floatLeft {
+    float: left;
+    padding-right: 6px;
+    margin: 0;
+}
+
+.postComment {
+    margin-top: 5px;
+    border-top: 1px solid #e6e6e6;
+}
+
+.commentInput {
+    width: 360px;
+    height: 44px;
+    padding: 0 12px;
+    border-style: none;
+    text-align: left;
+    outline: none;
+}
+
+.commentBtn {
+    float: right;
+    padding: 15px 12px;
+    color: #c8e2fb;
+    background-color: white;
+    border-style: none;
+}
+
+.commentBtn:hover, .commentBtn:focus {
+    color: #5eacd6;
+}
+
+aside section {
+    margin: 10px 0;
+}
+
+.myPfp {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.myProfile {
+    display: flex;
+    margin: 5px;
+}
+
+.myHandle, .otherUserInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 8px;
+}
+
+.bold {
+    font-weight: 560;
+} 
+
+.story, .suggestedForYou {
+    background-color: white;
+    border: 1px solid #e6e6e6
+}
+
+aside section .header {
+    display: flex;
+    justify-content: space-between;
+}
+
+section .header span {
+    margin: 10px 12px;
+}
+
+.profile {
+    display: flex;
+    margin: 2px 12px 12px;;
+}
+
+button {
+    background-color: white;
+    border: none;
+    padding: 0;
+}
+
+.likeBtn {
+    width: 10px;
+    height: 10px;
+    margin: 3px 5px;
+}
+
+.deleteBtn {
+    width: 20px;
+    height: 20px;
+    margin: 0px 5px;
+}
+
+.liked {
+    color: #fb3958;
+}
+
+.hidden {
+    visibility:hidden
+}
+
+.commentAndBtns {
+    display: flex;
+    justify-content: flex-start;
+    align-items: top;
+}
