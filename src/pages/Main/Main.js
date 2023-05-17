@@ -1,9 +1,10 @@
 import React from 'react';
-import './Main.css';
+import './Main.scss';
+
 
 function Main () {
     return (
-        <>
+        <body className='mainBody'>
             <nav>
                 <div className="navBarLogo">
                     <img src="/img/instagram.png" alt="instagram logo" className="icon"/>
@@ -15,10 +16,10 @@ function Main () {
                     /img/magnifyingGlass.png" alt="search icon" className="magnifyingGlass"/>
                 </div>
                 <div className="iconsOnRight">
-                    <a href="#"><img src="img/explore.png" alt="explore page" className="icon"/></a>
-                    <a href="#"><img src="
+                    <a href='#'><img src="img/explore.png" alt="explore page" className="icon"/></a>
+                    <a href='#'><img src="
                     /img/heart.png" alt="notificaions" className="icon"/></a>
-                    <a href="#"><img src="
+                    <a href='#'><img src="
                     /img/profile.png" alt="my profile" className="icon"/></a>
                 </div>
             </nav>
@@ -36,7 +37,7 @@ function Main () {
                             /img/threedots.png" alt="view more" className="icon"/>
                         </header>
                         <img src="
-                        /img/feed1.png" alt="uplodaded by the user" className="uploadedImg"/>
+                        /img/feed1.png" alt="feed" className="feedImg"/>
                         <div className="interactionBar">
                             <div className="interactionBarLeft">
                                 <img src="/img/redheart.png" alt="like" className="icon"/>
@@ -112,7 +113,6 @@ function Main () {
                             </div>
                         </div>                                         
                     </section>
-
                     <section className="suggestedForYou">
                         <div className="header">
                             <span className="light">회원님을 위한 추천</span>
@@ -120,21 +120,21 @@ function Main () {
                         </div>
                         <div className="profileList">
                             <div className="profile">
-                                <img src="./img/pfp3.jpeg" alt="profile picture" className="pfp"/>
+                                <img src="./img/pfp3.jpeg" alt="profile" className="pfp"/>
                                 <div className="otherUserInfo">
                                     <span className="username bold">kyliejenner</span>
                                     <span className="light">_legend_a님 외 2명이 ...</span>
                                 </div>   
                             </div>
                             <div className="profile">
-                                <img src="img/pfp4.jpeg" alt="profile picture" className="pfp"/>
+                                <img src="img/pfp4.jpeg" alt="profile" className="pfp"/>
                                 <div className="otherUserInfo">
                                     <span className="username bold">arianagrande</span>
                                     <span className="light">ringo.in.seoul님 외 12...</span>
                                 </div>   
                             </div>
-                            <div classNameName="profile">
-                                <img src="./img/pfp5.jpeg" alt="profile picture" className="pfp"/>
+                            <div className="profile">
+                                <img src="./img/pfp5.jpeg" alt="profile" className="pfp"/>
                                 <div className="otherUserInfo">
                                     <span className="username bold">justinbieber</span>
                                     <span className="light">jimmylee1220님 외 1...</span>
@@ -149,7 +149,7 @@ function Main () {
                     </footer>
                 </aside>
             </main> 
-        </>
+        </body>
     );
 };
 

@@ -1,0 +1,268 @@
+@import "../../styles/mixin.scss";
+
+@media screen and (max-width: 840px) {
+    .main-right {
+        display: none;
+    }
+}
+
+body.mainBody {
+    .icon {
+        width: 20px;
+        height: 20px;
+        margin: 5px;
+    }
+
+    .liked {
+        color: #fb3958;
+    }
+
+    .floatLeft {
+        float: left;
+        padding-right: 6px;
+        margin: 0;
+    }
+
+    button {
+        background-color: white;
+        border: none;
+        padding: 0;
+    }
+
+    nav {
+        @include flexSort(row, space-between, center);
+        margin: 15px;
+    
+        .navBarLogo {
+            @include flexSort(row, center, center);
+            margin-left: 50px;
+    
+            .logo {
+                font-size: 20px;
+                margin: 0 10px;
+                padding: 1px 10px;
+                border-left: 1px solid black;
+                font-family: 'Lobster', sans-serif;
+            }
+        }
+    
+        .searchBar {
+            @include flexSort(row, center, center);
+    
+            .searchInput {
+                width: 160px;
+                height: 22px;
+                background-color: #fafafa;
+                border: 1px solid #e6e6e6;
+
+                &::placeholder {
+                    font-size: 10px;
+                    text-align: center;
+                }
+            }
+    
+            .magnifyingGlass {
+                width: 8px;
+                margin: 2px;
+                transform: translate(-102px, 0.5px);
+            }
+        }
+    
+        .iconsOnRight {
+            @include flexSort(row, flex-end, center);
+
+            .icon {
+                margin: 0 10px;
+            }
+        }
+    }
+
+    main {
+        @include flexSort(row, center, flex-start);
+        padding: 30px 10px;
+        background-color: #fafafa;
+        border-top: 1px solid #e6e6e6;
+
+        section.feed {
+
+            margin: 0 20px 0 50px;
+
+            article {
+                width: 470px;
+                background-color: white;
+                border: 1px solid #e6e6e6;
+
+                header {
+                    @include flexSort(row, space-between, center);
+                    margin: 8px 4px 8px 5px;
+
+                    .userInfo {
+                        @include flexSort(row, flex-start, center);
+
+                        .pfp {
+                            width: 32px;
+                            margin-left: 8px;
+                            border-radius: 50%;
+                        }
+
+                        .username {
+                            margin: 0 0 0 12px;
+                        }
+                    }
+                }
+
+                .feedImg {
+                    width: 468px;
+                }
+
+                .interactionBar {
+                    @include flexSort(row, space-between, center);
+                    margin: 0 5px 0 10px;
+                }
+
+                .likedListContainer {
+                    @include flexSort(row, flex-start, center);
+                    height: 20px;
+                    margin: 0 0 6px 12px;
+
+                    .pfpSmall {
+                        width: 15px;
+                        margin-right: 4px;
+                        border-radius: 50%;
+                    }
+                }
+
+                .caption {
+                    margin: 2px 12px;
+                }
+
+                .commentSection {
+                    @include flexSort(column, center, flex-start);
+
+                    .commentsList {
+                        padding: 0;
+                        margin: 1px 0 1px 12px;
+
+                        .commentAndBtns {
+                            @include flexSort(row, flex-start, flex-start);
+                            //align-items: top;
+
+                            .comment {
+                                width: 400px;
+                                margin: 3px 0;
+                                word-wrap: break-word;
+                                float: left;
+                            }
+
+                            .deleteBtn {
+                                width: 20px;
+                                height: 20px;
+                                margin: 0px 5px;
+                            }
+
+                            .likeBtn {
+                                width: 10px;
+                                height: 10px;
+                                margin: 3px 5px;
+                            }
+                        }
+                    }
+
+                    .postComment {
+                        width: 100%;
+                        margin-top: 5px;
+                        border-top: 1px solid #e6e6e6;
+
+                        .commentInput {
+                            width: 360px;
+                            height: 44px;
+                            padding: 0 12px;
+                            border-style: none;
+                            text-align: left;
+                            outline: none;
+                        }
+
+                        .commentBtn {
+                            float: right;
+                            padding: 15px 12px;
+                            color: #c8e2fb;
+                            background-color: white;
+                            border-style: none;
+
+                            &:hover, &:focus {
+                                color: #5eacd6;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        aside.main-right {
+            width: 250px;
+            margin: 0 50px 0 20px;
+
+            section {
+                margin: 10px 0;
+
+                .header {
+                    @include flexSort(row, space-between, center);
+
+                    span {
+                        margin: 10px 12px;
+                    }
+                }
+            }
+
+            .myProfile {
+                display: flex;
+                margin: 5px;
+
+                .myPfp {
+                    border-radius: 50%;
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+
+            .story, .suggestedForYou {
+                background-color: white;
+                border: 1px solid #e6e6e6
+            }
+
+            .myHandle, .otherUserInfo {
+                @include flexSort(column, center, flex-start);
+                margin: 0 8px;
+            }
+
+            .profile {
+                display: flex;
+                margin: 2px 12px 12px;;
+            }
+
+            .pfp {
+                width: 30px;
+                margin-right: 0px;
+                border-radius: 50%;
+            }
+
+            footer {
+                width: 210px;
+                padding: 0 5px;
+            }
+        }
+    }
+}
+
+
+/*
+body {
+    margin: 0; 
+}
+
+a {
+    color: black;
+    font-weight: 560;
+}
+*/
+
